@@ -124,16 +124,19 @@
 
             &:hover:not(.active) > a,
             &:focus:not(.active) > a{
-                background-color: $opacity-1;
+                background-color: #DEDEDE;
+                // dito yung hover sa sidebar
             }
 
             &:hover:not(.active) > a i,
             &:focus:not(.active) > a i{
-                color: $white-color;
+                color: black;
+                // hover icon sidebar
             }
 
             &.active > a:not([data-toggle="collapse"]){
-                background-color: $white-color;
+                background-color: #DEDEDE;
+                // kapag selected na navbar dito ang background color
                 box-shadow: $box-shadow;
             }
 
@@ -181,7 +184,8 @@
             line-height: 30px;
             width: 34px;
             text-align: center;
-            color: $opacity-5;
+            color: black;
+            //color black ng icon sidebar
             position: relative;
         }
     }
@@ -296,12 +300,12 @@
     }
 
     &:after{
-        @include icon-gradient($default-color);
         z-index: 3;
     }
 
     &[data-color="blue"]{
-      @include sidebar-color($info-color);
+      color: #DEDEDE;
+    //   main color ng sidebar
     }
     &[data-color="green"]{
       @include sidebar-color($success-color);
@@ -343,11 +347,8 @@
     position: relative;
     float: right;
     width: $sidebar-width;
-    // width: 100%;
-    background-color: $light-gray;
     background-color: #ebecf1;
-
-    @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+    // main content background color
 
     div > .content{
         padding: 0 30px 30px;
@@ -395,7 +396,7 @@
   padding-top: 80px;
   padding-bottom: 45px;
   position: relative;
-  color: white;
+  background-color: #DEDEDE;
 
   .header{
     .title{

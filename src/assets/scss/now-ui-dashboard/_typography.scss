@@ -10,10 +10,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 a{
-    color: $primary-color;
+    color: green;
     &:hover,
     &:focus{
-        color: $primary-color;
+        color: red;
     }
 }
 h1, .h1 {
@@ -58,6 +58,8 @@ h6, .h6{
     text-transform: uppercase;
 }
 p{
+    color: black;
+    // kulay sa text ng typhography p
     &.description{
         font-size: 1.14em;
     }
