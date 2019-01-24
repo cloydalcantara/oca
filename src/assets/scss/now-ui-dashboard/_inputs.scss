@@ -1,10 +1,10 @@
-@include form-control-placeholder($default-color, 1);
+@include form-control-placeholder(grey, 1);
 
 .form-control {
     background-color: $transparent-bg;
     border: 1px solid $light-gray;
     border-radius: $btn-round-radius;
-    color: $black-color;
+    color: black;
     line-height: normal;
     font-size: $font-size-small;
     @include transition-input-focus-color();
@@ -13,10 +13,10 @@
 
 
     &:focus{
-        border: 1px solid $primary-color;
+        border: 1px solid black;
         @include box-shadow(none);
         outline: 0 !important;
-        color: $black-color;
+        color: black;
 
         & + .input-group-append .input-group-text,
         & ~ .input-group-append .input-group-text,
