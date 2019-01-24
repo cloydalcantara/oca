@@ -52,11 +52,11 @@ class Sidebar extends React.Component {
                 >
                   <NavLink
                     to={prop.path}
-                    className="nav-link"
+                    className="nav-link "
                     activeClassName="active"
                   >
                     <i className={"now-ui-icons " + prop.icon} />
-                    <p>{prop.name}</p>
+                    <p className="menup">{prop.name}</p>
                   </NavLink>
                 </li>
               );

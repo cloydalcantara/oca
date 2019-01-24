@@ -62,11 +62,16 @@ label {
     color: black !important;
 }
 
+.menup {
+    font-size: 1.3em;
+}
+
 p{
-    color: black;
+    color: black !important;
+    font-weight: 500 !important;
     // kulay sa text ng typhography p
     &.description{
-        font-size: 1.14em;
+        font-size: 1em;
     }
 }
 

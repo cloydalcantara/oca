@@ -1323,10 +1323,14 @@ h6, .h6 {
 label {
   color: black !important; }
 
+.menup {
+  font-size: 1.3em; }
+
 p {
-  color: black; }
+  color: black !important;
+  font-weight: 500 !important; }
   p.description {
-    font-size: 1.14em; }
+    font-size: 1em; }
 
 .title {
   font-weight: 700; }
